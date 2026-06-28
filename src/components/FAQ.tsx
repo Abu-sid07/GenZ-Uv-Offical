@@ -4,11 +4,11 @@ import { PlusIcon } from "../lib/icons";
 
 const FAQS = [
   {
-    q: "Do you only work with Muslim businesses?",
-    a: "We proudly specialise in Muslim entrepreneurs, but we work with any brand whose products and services are halal. What matters most is that we can promote your business ethically and honestly — in line with our values.",
+    q: "Do you have requirements for the businesses you work with?",
+    a: "Yes, we work with any brand whose products and services are principled. What matters most is that we can promote your business ethically and honestly — in line with our values.",
   },
   {
-    q: "What does “halal marketing” actually mean?",
+    q: "What does Ethical Marketing actually mean?",
     a: "It means we never promote alcohol, gambling, adult content, interest-based (riba) lending or anything dishonest. We also avoid deceptive tactics, fake engagement and misleading claims — only honest, high-quality work that builds real trust.",
   },
   {

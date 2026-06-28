@@ -84,7 +84,7 @@ Message: ${formData.message || "Not provided"}
                 <MailIcon className="h-5 w-5 text-emerald-glow" /> hello@genzuv.com
               </a>
               <div className="flex items-center gap-3 rounded-xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-emerald-50/80">
-                <MapPinIcon className="h-5 w-5 text-emerald-glow" /> Remote · Serving the global Ummah
+                <MapPinIcon className="h-5 w-5 text-emerald-glow" /> Remote · Serving the global People
               </div>
               <div className="flex items-center gap-3 rounded-xl border border-white/8 bg-white/[0.03] px-4 py-3 text-sm text-emerald-50/80">
                 <ShieldIcon className="h-5 w-5 text-emerald-glow" /> We reply within 24 hours, in sha Allah

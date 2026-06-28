@@ -6,7 +6,6 @@ const LINKS = [
   { label: "Services", href: "#services" },
   { label: "Why Genzuv", href: "#why" },
   { label: "Work", href: "#work" },
-  { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
 ];
 

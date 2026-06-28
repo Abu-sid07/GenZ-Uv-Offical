@@ -1,11 +1,7 @@
 import { StarShape, PatternField } from "./Geometric";
 import { ArrowIcon, PlayIcon, ShieldIcon, BoltIcon, SparkIcon } from "../lib/icons";
 
-const HERO_STATS = [
-  { value: "250+", label: "Brands scaled" },
-  { value: "50M+", label: "Views driven" },
-  { value: "7×", label: "Avg. ROI" },
-];
+
 
 export default function Hero() {
   return (
@@ -29,11 +25,11 @@ export default function Hero() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="reveal inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/5 px-4 py-1.5 text-xs font-medium text-emerald-50/80 backdrop-blur">
             <ShieldIcon className="h-3.5 w-3.5 text-emerald-glow" />
-            100% Halal Marketing · Built for the Modern Ummah
+            100% Principled Marketing · Built for the Modern People
           </div>
 
           <h1 className="reveal mt-6 font-display text-[2.6rem] font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl" data-delay="60">
-            We Grow Halal Brands
+            We Grow Principled brands
             <br className="hidden sm:block" /> with{" "}
             <span className="text-gradient">Gen-Z Energy</span>
           </h1>
@@ -63,18 +59,8 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Hero stats */}
-          <div className="reveal mx-auto mt-14 grid max-w-2xl grid-cols-3 gap-3 sm:gap-6" data-delay="300">
-            {HERO_STATS.map((s) => (
-              <div
-                key={s.label}
-                className="rounded-2xl border border-white/8 bg-white/[0.03] p-4 backdrop-blur sm:p-5"
-              >
-                <div className="font-display text-2xl font-bold text-gradient-soft sm:text-3xl">{s.value}</div>
-                <div className="mt-1 text-[0.7rem] text-emerald-50/55 sm:text-xs">{s.label}</div>
-              </div>
-            ))}
-          </div>
+         
+          
         </div>
 
         {/* Trust strip */}

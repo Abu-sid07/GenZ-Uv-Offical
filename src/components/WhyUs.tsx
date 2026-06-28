@@ -22,11 +22,7 @@ const FEATURES = [
   },
 ];
 
-const VALUES = [
-  { arabic: "أمانة", name: "Amanah", meaning: "Trust — we treat your brand & data as a sacred trust." },
-  { arabic: "إخلاص", name: "Ikhlas", meaning: "Sincerity — honest work, honest results, no gimmicks." },
-  { arabic: "بركة", name: "Barakah", meaning: "Blessing — growth that lasts, with ethics at the centre." },
-];
+
 
 const DO = ["Modest fashion & beauty", "Halal food & cafés", "Islamic finance & education", "Muslim creators & coaches", "Startups & local businesses"];
 const DONT = ["Alcohol & nightlife", "Gambling & betting", "Adult / indecent content", "Riba-based lending", "Anything dishonest"];
@@ -111,17 +107,7 @@ export default function WhyUs() {
         </div>
 
         {/* Values */}
-        <div className="reveal mt-5 grid gap-5 sm:grid-cols-3">
-          {VALUES.map((v) => (
-            <div key={v.name} className="flex items-center gap-4 rounded-3xl border border-white/8 bg-gradient-to-br from-emerald-400/[0.06] to-transparent p-6">
-              <div className="font-display text-3xl font-bold text-gradient-soft" dir="rtl">{v.arabic}</div>
-              <div>
-                <div className="font-display font-bold text-white">{v.name}</div>
-                <div className="mt-0.5 text-xs leading-relaxed text-emerald-50/55">{v.meaning}</div>
-              </div>
-            </div>
-          ))}
-        </div>
+      
       </div>
     </section>
   );

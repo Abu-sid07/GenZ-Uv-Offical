@@ -12,35 +12,44 @@ type T = {
 const ITEMS: T[] = [
   {
     quote:
-      "Genzuv understood our modest fashion brand instantly. Within two months our Reels were hitting millions and sales followed. Finally an agency that gets our values AND knows how to go viral.",
-    name: "Aisha Rahman",
-    role: "Founder, Noor Apparel",
-    initials: "AR",
-    grad: "from-rose-400 to-fuchsia-500",
+      "The website design is absolutely stunning with a beautiful UI that makes navigation effortless. The smooth animations enhance the user experience and make learning feel interactive and engaging.",
+    name: "Khaja Sir",
+    role: "English Fluency Guide",
+    initials: "KS",
+    grad: "from-blue-400 to-indigo-500",
   },
   {
     quote:
-      "The AI chatbot they built captures leads while we sleep — our café bookings doubled. Honest, talented and genuinely good people to work with. May Allah reward them.",
-    name: "Yusuf Khan",
-    role: "Owner, Saffron Kitchen",
-    initials: "YK",
-    grad: "from-amber-400 to-orange-500",
+      "From the moment I visited the website, the beautiful design and smooth animations caught my attention. The enrollment process was so straightforward that I signed up immediately. Truly impressive!",
+    name: "Noorul Ameen",
+    role: "Supporting Staff",
+    initials: "NA",
+    grad: "from-orange-400 to-red-500",
   },
   {
     quote:
-      "My course launch sold out thanks to their funnel and site. They treated my mission like their own. The barakah in working with a halal team is real.",
-    name: "Fatima Noor",
-    role: "Course Creator, Ilm Academy",
-    initials: "FN",
-    grad: "from-emerald-400 to-teal-500",
+      "I was impressed by how modern and clean the website looks. The UI is so intuitive that I could easily explore all courses and sign up without any confusion or complications.",
+    name: "Abdullah",
+    role: "Current Student",
+    initials: "ABD",
+    grad: "from-green-400 to-emerald-500",
   },
   {
     quote:
-      "Professional, fast and completely aligned with our ethics. They scaled our launch with zero haram tactics. Genzuv is now our long-term growth partner.",
-    name: "Bilal Ahmed",
-    role: "CEO, Amana Finance",
-    initials: "BA",
-    grad: "from-sky-400 to-cyan-500",
+      "The website's design and animations are incredible. What impressed me most is how simple the enrollment process is—I registered for the course in just a few minutes without any hassle.",
+    name: "Musthakeem",
+    role: "Old Batch Student",
+    initials: "MS",
+    grad: "from-purple-400 to-pink-500",
+  },
+  
+  {
+    quote:
+      "Our website combines stunning UI design with seamless animations that keep students engaged. The enrollment process is so user-friendly that conversion rates have significantly improved.",
+    name: "Kabeer Sir",
+    role: "Academy Coordinator",
+    initials: "KB",
+    grad: "from-teal-400 to-cyan-500",
   },
 ];
 
@@ -53,18 +62,18 @@ export default function Testimonials() {
           eyebrow="Client Love"
           title={
             <>
-              Trusted by Muslim founders <span className="text-gradient">worldwide</span>
+              Trusted by Principled founders <span className="text-gradient">worldwide</span>
             </>
           }
           desc="Real partnerships, real results — and a whole lot of dua from grateful founders."
         />
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2">
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {ITEMS.map((t, i) => (
             <figure
               key={t.name}
               className="reveal group relative overflow-hidden rounded-3xl border border-white/8 bg-white/[0.02] p-7 transition-colors hover:border-emerald-400/20"
-              data-delay={`${(i % 2) * 90}`}
+              data-delay={`${(i % 3) * 90}`}
             >
               <QuoteIcon className="h-9 w-9 text-emerald-400/20" />
               <blockquote className="mt-4 text-base leading-relaxed text-emerald-50/85">

@@ -36,7 +36,7 @@ export function LogoMark({ className, ...props }: SVGProps<SVGSVGElement>) {
 export function Wordmark({ className = "" }: { className?: string }) {
   return (
     <span className={`flex items-center gap-2.5 font-display font-bold tracking-tight ${className}`}>
-      <img src="/GenZ-logo.jpeg" alt="Genzuv Logo" className="h-10 w-10 shadow-xl m-3 shadow-amber-400/50 border-2 hover:rotate-6 hover:shadow-green-300/40  border-emerald-300 rounded-full " />
+      <img src="/GenZ-logo.jpeg" alt="Genzuv Logo" className="h-10 w-10    border-2  border-emerald-300 rounded-full " />
     </span>
   );
 }

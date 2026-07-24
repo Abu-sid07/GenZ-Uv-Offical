@@ -29,20 +29,21 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? "py-2" : "py-4"
+      className={`fixed inset-x-0  z-50 transition-all ease-in-out duration-1000 ${
+        scrolled ? "py-2 top-0" : "py-4"
       }`}
     >
       <div className="mx-auto w-full px-4 sm:px-6">
         <div
-          className={`flex items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-500 sm:px-5 ${
+          className={`flex items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-500 sm:px-5 group ${
             scrolled
               ? "glass-strong border border-emerald-400/50 shadow-2xl shadow-black/40"
               : "border border-transparent"
           }`}
         >
-          <a href="#top" className="shrink-0 ">
-            <Wordmark  />
+          <a href="#top" className="shrink-0 flex gap-1 items-center  ">
+            <Wordmark  className='group-hover:scale-105 group-hover:rotate-6  shadow-xl shadow-amber-500 group-hover:shadow-emerald-300 rounded-full transition-all ease-in-out duration-500'/>
+            <p className='group-hover:scale-105'>Genz UV</p>
           </a>
 
           <nav className="hidden items-center gap-1 lg:flex">

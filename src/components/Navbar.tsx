@@ -30,19 +30,19 @@ export default function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? "py-2.5" : "py-4"
+        scrolled ? "py-2" : "py-4"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+      <div className="mx-auto w-full px-4 sm:px-6">
         <div
           className={`flex items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-500 sm:px-5 ${
             scrolled
-              ? "glass-strong border border-emerald-400/10 shadow-2xl shadow-black/40"
+              ? "glass-strong border border-emerald-400/50 shadow-2xl shadow-black/40"
               : "border border-transparent"
           }`}
         >
-          <a href="#top" className="shrink-0">
-            <Wordmark />
+          <a href="#top" className="shrink-0 ">
+            <Wordmark  />
           </a>
 
           <nav className="hidden items-center gap-1 lg:flex">

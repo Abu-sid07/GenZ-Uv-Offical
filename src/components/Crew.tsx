@@ -17,6 +17,7 @@ const CREW: CrewMember[] = [
     skills: ["Digital Marketing", "SEO", "Automation", "Content Creation"],
     image: "/uwais.jpeg",
     imagePosition: "center 35%",
+    link:''
   },
   {
     name: "Abu",
@@ -25,7 +26,18 @@ const CREW: CrewMember[] = [
     skills: ["Software Development", "Content Creation"],
     image: "/abu.jpeg",
     imagePosition: "center 20%",
+    link:''
   },
+  {
+    name: "Abdul Haadhi",
+    role: "Co-Founder — Software Developer",
+    tagline: " Inpire and Innovate",
+    skills: ["Software Developer", "Web Developer"],
+    image: "/haadhiiii.jpeg",
+    imagePosition: "center 20%",
+    link:'https://abdulhaadhifolio.netlify.app'
+  },
+  
 ];
 
 export default function Crew() {
@@ -41,19 +53,20 @@ export default function Crew() {
         />
 
         <div className="mt-10 flex justify-center">
-          <div className="grid gap-6 sm:grid-cols-2 max-w-4xl w-full">
+          <div className="grid gap-6 sm:grid-cols-3  w-full">
             {CREW.map((member, index) => (
-              <article
-                key={member.name}
+              <a   key={member.name} key={index} href={member.link !== null ? member.link : 'https://google.com'}>
+                <article
+              
                 className="reveal group relative overflow-hidden rounded-2xl border border-white/8 bg-white/[0.02] p-6 transition-all duration-500 hover:-translate-y-1.5 hover:border-emerald-400/25 flex flex-col"
                 data-delay={`${index * 90}`}
               >
-                <div className="relative flex flex-col items-center text-center flex-1">
-                  <div className="relative mb-6 h-44 w-44 overflow-hidden rounded-full border-4 border-emerald-400/30">
+                <div className=" group relative flex flex-col items-center text-center flex-1 ">
+                  <div className="relative mb-6 h-44 w-44 overflow-hidden rounded-full border-4 group-hover:rotate-3 group-hover:shadow-xl shadow-amber-500 border-emerald-400/30">
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover "
                       style={{ objectPosition: member.imagePosition }}
                     />
                   </div>
@@ -62,13 +75,14 @@ export default function Crew() {
                     {member.skills.join(" • ")}
                   </div>
                   <p className="mt-4 text-lg font-semibold text-emerald-400">{member.role}</p>
-                  <div className="mt-6 rounded-2xl bg-white/5 px-6 py-4 border border-white/10">
-                    <p className="text-sm text-emerald-50/70 leading-relaxed">
-                      "{member.name} | {member.tagline}"
+                  <div className="mt-6 rounded-2xl bg-white/5 px-6 py-4 border border-white/10 shadow-xl shadow-emerald-200/20">
+                    <p className="text-sm text-emerald-50/70 leading-relaxed ">
+                      {member.tagline}
                     </p>
                   </div>
                 </div>
               </article>
+              </a>
             ))}
           </div>
         </div>

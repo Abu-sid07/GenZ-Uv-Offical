@@ -35,9 +35,9 @@ export default function Hero() {
           </h1>
 
           <p className="reveal mx-auto mt-6 max-w-2xl text-base leading-relaxed text-emerald-50/65 sm:text-lg" data-delay="140">
-          !!Peace be upon you!!! Genzuv is the digital marketing agency for ambitious Muslim
+         Genzuv is the digital marketing agency for ambitious Young
             entrepreneurs. From scroll-stopping video to AI automation and high-converting
-            websites — we help your brand scale with <span className="text-white">barakah</span>, not burnout.
+            websites — we help your brand scale with <span className="text-white">Growing Mindset and Mentality</span>, not burnout.
           </p>
 
           <div className="reveal mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row" data-delay="220">

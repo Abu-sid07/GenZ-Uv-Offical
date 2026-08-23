@@ -63,7 +63,7 @@ Message: ${formData.message || "Not provided"}
             <div className="absolute inset-0 grid-bg opacity-25" />
             <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-gold/15 blur-3xl" />
 
-            <div className="relative">
+            <div className="relative" data-aos='zoom-in'>
               <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/5 px-4 py-1.5 text-xs font-medium text-emerald-glow">
                 <BoltIcon className="h-3.5 w-3.5" /> Free 30-min strategy call
               </div>

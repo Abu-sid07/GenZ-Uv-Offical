@@ -12,6 +12,15 @@ import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+//importing the aos
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
+AOS.init({
+  duration: 800, // Animation duration in milliseconds
+  once: false,    // Whether animation should happen only once
+});
+
 export default function App() {
   useReveal();
 

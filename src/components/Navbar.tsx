@@ -43,7 +43,12 @@ export default function Navbar() {
         >
           <a href="#top" className="shrink-0 flex gap-1 items-center  ">
             <Wordmark  className='group-hover:scale-105 group-hover:rotate-6  shadow-xl shadow-amber-500 group-hover:shadow-emerald-300 rounded-full transition-all ease-in-out duration-500'/>
-            <p className='group-hover:scale-105'>Genz UV</p>
+            <div className='group-hover:scale-105 flex items-center'>
+
+              <p>GEN</p>
+              <p className={`${scrolled ? `-rotate-16` : `rotate-16`} text-2xl font-bold  text-emerald-300 group-hover:text-cyan-200 group-hover:rotate-0 transition-all ease-in-out duration-1000 `}>Z</p>
+              <p>UV</p>
+            </div>
           </a>
 
           <nav className="hidden items-center gap-1 lg:flex">
@@ -61,7 +66,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2.5">
             <a
               href="#contact"
-              className="group hidden items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-400 via-lime-glow to-gold px-4.5 py-2.5 text-sm font-semibold text-ink shadow-lg shadow-emerald-500/20 transition-transform hover:scale-[1.03] sm:flex"
+              className="group hidden items-center gap-2 rounded-xl bg-gradient-to-r hover:bg-gradient-to-l transition-colors ease-in-out duration-1000 from-emerald-400 via-lime-glow to-gold px-4.5 py-2.5 text-sm font-semibold text-ink shadow-lg shadow-emerald-500/20 transition-transform hover:scale-[1.03] sm:flex"
             >
               Book a Free Call
               <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
@@ -105,7 +110,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-400 to-gold px-4 py-3 text-sm font-semibold text-ink"
+            className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-gradient-to-l from-emerald-400 to-gold px-4   py-3 text-sm font-semibold text-ink"
           >
             Book a Free Call <ArrowIcon className="h-4 w-4" />
           </a>

@@ -49,7 +49,12 @@ Email: ${email}
         <div className="grid gap-10 pb-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           {/* brand */}
           <div>
-            <Wordmark />
+
+            <div className='flex items-center gap-3'>
+
+              <Wordmark /> <div className='flex items-center  '><p>GEN</p><p className=' rotate-16 text-2xl font-bold text-emerald-500'>Z</p><p>UV</p></div>
+            </div>
+            
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-emerald-50/55">
               A Gen-Z digital marketing agency helping Muslim entrepreneurs build halal brands that
               grow with barakah.
@@ -115,9 +120,13 @@ Email: ${email}
           <p className="text-xs text-emerald-50/45">
             © {new Date().getFullYear()} Genzuv Digital Marketing Agency. All rights reserved.
           </p>
-          <p className="text-xs text-emerald-50/45">
-            بسم الله الرحمن الرحيم · Made with <span className="text-emerald-glow">barakah</span> 🌙
-          </p>
+
+          <div className='flex items-center'>
+          <span >GEN</span>
+          <p className='text-xl -rotate-12 font-bold'>Z</p>
+          <span className='text-emerald-400'>UV</span>
+          </div>
+
           <div className="flex gap-5 text-xs text-emerald-50/45">
             <a href="#" className="hover:text-emerald-glow">Privacy</a>
             <a href="#" className="hover:text-emerald-glow">Terms</a>

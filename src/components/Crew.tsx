@@ -8,6 +8,7 @@ type CrewMember = {
   skills: string[];
   image: string;
   imagePosition: string;
+  link:string;
 };
 
 const CREW: CrewMember[] = [
@@ -18,6 +19,7 @@ const CREW: CrewMember[] = [
     skills: ["Digital Marketing", "SEO", "Automation", "Content Creation"],
     image: "/uwais.jpeg",
     imagePosition: "center 35%",
+    link:'',
     
   },
   {
@@ -27,6 +29,7 @@ const CREW: CrewMember[] = [
     skills: ["Software Development", "Content Creation"],
     image: "/abu.jpeg",
     imagePosition: "center 20%",
+    link:'https://abu-webs.vercel.app/ ',
     
   },
   {
@@ -77,14 +80,18 @@ export default function Crew() {
                     {member.skills.join(" • ")}
                   </div>
                   <p className="mt-4 text-lg font-semibold text-emerald-400">{member.role}</p>
-                  <div className="mt-6 rounded-2xl bg-white/5 px-6 py-4 border border-white/10 hover:bg-emerald-50 transition-all ease-in-out duration-1000 hover:text-stone-800 shadow-xl shadow-emerald-200/20">
+                  <div className="mt-6 rounded-2xl bg-white/5 px-6 py-4 border border-white/10 group-hover:bg-emerald-50 transition-all ease-in-out duration-1000 group-hover:text-stone-800 shadow-xl shadow-emerald-200/20">
                     <a className="text-sm  leading-relaxed flex gap-2 group " href={member.link}>
                       <p className= {` ${member.link && `group-hover:hidden`} transition-all ease-in-out duration-1000 `}>{member.tagline}</p>
-                      
-                        {member.link && <ArrowRightCircle className='hidden group-hover:block transition-all ease-in-out duration-1000 bg-emerald-900 border border-emerald-300 rounded-full'/>}
+                          
+                        {member.link && <div className=' gap-1 items-center hidden group-hover:flex transition-all ease-in-out duration-1000'>
+                        <p>Profile</p>
+                        <ArrowRightCircle className=' bg-emerald-900 border border-emerald-300 rounded-full'/>
+                        </div> 
+                        }
                         
                     </a>
-                  </div>
+                  </div> 
                 </div>
               </article>
               </a>
